@@ -79,7 +79,6 @@ const items = images
     <img
       class='gallery-image'
       src='${el.preview}'
-      data-source='${el.original}'
       alt='${el.description}'/>
   </a>
     </li>`
