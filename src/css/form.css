@@ -1,0 +1,43 @@
+body {
+    font-family: Montserrat;
+    background-color: #fff;
+}
+
+.feedback-form {
+    max-width: 408px;
+    height: 296px;
+    padding: 24px 24px;
+}
+
+.form-input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 8px;
+    font-family: Montserrat;
+    font-size: 16px;
+    letter-spacing: 0.64px;
+    line-height: 1.5em;
+    color: #2E2F42;
+    border-radius: 5px;
+    border-color: #808080;
+    outline: none;
+    cursor: pointer;
+}
+
+.message {
+    height: 80px;
+    resize: none;
+    margin-bottom: 16px;
+}
+
+.form-button {
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 0.64px;
+    line-height: 1.5em;
+    background-color: #4E75FF;
+    border-radius: 8px;
+    border-color: transparent;
+    min-width: 95px;
+    height: 40px;
+}
