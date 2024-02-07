@@ -28,7 +28,7 @@ if (rawData) {
 
 form.addEventListener('submit', event => {
     event.preventDefault()
-    if (form.email.value && form.message.value) {
+    if (form.email.value !== '' && form.message.value !== '') {
         console.log(getValueFromInput(event.currentTarget))
         form.reset()
         localStorage.clear()
