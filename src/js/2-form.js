@@ -3,8 +3,8 @@ const STORAGE_KEY = "feedback-form-state"
 const form = document.querySelector('.feedback-form')
 
 function getValueFromInput(form) {
-    const email = form.email.value
-    const message = form.message.value
+    const email = form.email.value.trim()
+    const message = form.message.value.trim()
     return {
         email,
         message
@@ -13,7 +13,7 @@ function getValueFromInput(form) {
 
 form.addEventListener('input', event => {
     const data = getValueFromInput(event.currentTarget)
-    const jsonData = JSON.stringify(data).trim()
+    const jsonData = JSON.stringify(data)
     localStorage.setItem(STORAGE_KEY, jsonData)
 
 })
